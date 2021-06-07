@@ -1,0 +1,28 @@
+POST http://localhost:3001/tasks
+Content-Type: application/json
+
+{"description":"prova", "important":0, "private": 1, "deadline":"2021-05-09", "completed": 0, "user": 1 }
+
+#
+#
+###
+
+GET http://localhost:3001/api/tasks
+###
+
+PUT http://localhost:3001/tasks
+Content-Type: application/json
+
+{"id":12, "description":"prova123", "important":1, "private": 0, "deadline":"2021-05-09", "completed": 0, "user": 1 }
+
+###
+DELETE http://localhost:3001/api/tasks/17
+
+###
+PUT http://localhost:3001/tasks/10/mark###
+###
+POST http://localhost:3001/api/tasks
+Content-Type: application/json
+
+{"id":12, "description":"dsf", "important":1, "private": 0, "deadline":"2021-05-24T18:00", "completed": true, "user": 1 }
+
